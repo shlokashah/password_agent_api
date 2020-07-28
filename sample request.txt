@@ -1,0 +1,33 @@
+User Create:
+
+http://127.0.0.1:8000/app/users/
+
+Request:
+Username,password,password2
+
+Login:
+
+http://127.0.0.1:8000/app/users/auth/
+
+request:
+username,password
+
+Create Website Details:
+
+http://127.0.0.1:8000/app/sites/?user=3
+
+request:
+username,password,website
+header:
+authorization token
+query_parameters:
+user_id
+
+List Website Details:
+
+http://127.0.0.1:8000/app/sites/list/?user=3
+
+header:
+authorization token
+query_parameters:
+user_id
