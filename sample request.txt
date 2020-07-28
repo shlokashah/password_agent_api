@@ -21,7 +21,7 @@ username,password,website
 header:
 Authorization  Token c3bc13ca3fe94bd79084efac56ebb6fc2c27cd04
 query_parameters:
-user
+user (user_id)
 
 List Website Details:
 
@@ -30,4 +30,4 @@ http://127.0.0.1:8000/app/sites/list/?user=3
 header:
 Authorization  Token c3bc13ca3fe94bd79084efac56ebb6fc2c27cd04
 query_parameters:
-user
+user(user_id)
