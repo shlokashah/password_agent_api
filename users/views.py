@@ -14,6 +14,7 @@ from django.core import serializers
 # Create your views here.
 
 '''/app/users/'''
+# Registering New User
 @api_view(['POST',])
 def registration_view(request):
 	print("viewww")
@@ -37,6 +38,7 @@ def registration_view(request):
 		return Response({'failure':'error in data'},content_type='application/json',status=400)
 
 '''/app/users/auth'''
+# Logging the user in
 class Login_view(ObtainAuthToken):
 	def post(self, request, *args, **kwargs):
 		serializer = self.serializer_class(data=request.data,context={'request': request})

@@ -11,6 +11,7 @@ from .tokens import password_token
 # Create your views here.
 
 '''/app/sites/'''
+# Create new website
 @api_view(['POST',])
 @permission_classes([IsAuthenticated,])
 def create_website(request):
@@ -29,6 +30,7 @@ def create_website(request):
 		return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
 
 '''app/sites/list/'''
+# List all the websites
 @api_view(['GET',])
 @permission_classes([IsAuthenticated,])
 def list_websites(request):
