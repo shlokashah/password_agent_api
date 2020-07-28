@@ -19,15 +19,15 @@ http://127.0.0.1:8000/app/sites/?user=3
 request:
 username,password,website
 header:
-authorization token
+Authorization  Token c3bc13ca3fe94bd79084efac56ebb6fc2c27cd04
 query_parameters:
-user_id
+user
 
 List Website Details:
 
 http://127.0.0.1:8000/app/sites/list/?user=3
 
 header:
-authorization token
+Authorization  Token c3bc13ca3fe94bd79084efac56ebb6fc2c27cd04
 query_parameters:
-user_id
+user
